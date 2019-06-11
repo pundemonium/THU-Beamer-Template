@@ -1,0 +1,73 @@
+% Template create by Ariel Soto-Caro, Jan-2019.
+% asotocaro@ufl.edu & arielsotocaro@gmail.com
+% This template is availible at github as well:
+% https://github.com/ArielSotoCaro/FRED_beamer_theme/
+\documentclass[aspectratio=169]{beamer}
+\usepackage{thutheme}
+\usepackage[normalem]{ulem} %for strike through cmd \sout{}
+\usepackage{tikz}
+\usetikzlibrary{overlay-beamer-styles}
+ \tikzset{
+    highlight on/.style={alt={#1{fill=red!80!black,color=red!80!black}{fill=gray!30!white,color=gray!30!white}}},
+}
+\usepackage{hanging}% http://ctan.org/pkg/hanging
+\setbeamertemplate{footnote}{%
+  \hangpara{2em}{1}%
+  \makebox[2em][l]{\insertfootnotemark}\footnotesize\insertfootnotetext\par%
+}
+%
+
+%% ===========================================
+%% ===========================================
+\title{\huge Lessons Learned in 2019 Testchip Tapeout}
+\author{Qihang Shi}
+\institute{Florida Institute of Cybersecurity (FICS)}
+\date{\today}
+%% ===========================================
+%% ===========================================
+\begin{document}
+
+
+\titleframe
+%% ===========================================
+%% ===========================================
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+
+%% ===========================================
+%% ===========================================
+%	PRESENTATION SLIDES
+%% ===========================================
+%% ===========================================
+
+%% ===========================================
+%% ===========================================
+%\section{Outline} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%% ===========================================
+%% ===========================================
+
+%\subsection{Outline} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+%% ===========================================
+%% ===========================================
+
+\begin{frame}
+\frametitle{Contents}
+\begin{itemize}
+\item Design Summary: What we did
+\item Design Process: How we did it
+\item Design Flows: How we made it to work
+\item Accomplishments: What we shall do again
+\item Lessons: What we should prevent from happening in the future
+\end{itemize}
+\end{frame}
+
+%\input{1_designsummary.tex}
+%\input{2_designprocess.tex}
+%\input{3_designchoices.tex}
+%\input{4_5_accomplishments_lessons.tex}
+
+\end{document}
